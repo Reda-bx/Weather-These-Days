@@ -1,0 +1,156 @@
+@font-face {
+    font-family: v;
+    src: url(pro.otf); }
+body, html{
+  background: #00a7de;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.title{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  color: white;
+  border: 6px solid #fff;
+  padding: 20px 30px 25px 30px;
+  font-family: v;
+  font-size: 30px;
+  text-align: center;
+}
+.dark{
+  background-color: #6c6c6c
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  float: left;
+  background-color: #efefef;
+  border-radius: 50%;
+  position: relative;
+}
+.day{
+  background: #fff;
+
+}
+.dayClass{
+  animation: .5s linear suncolor infinite;
+}
+.hr{
+  height: 5px;
+  width: 50px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.lines{
+  animation: .5s linear lines infinite;
+}
+.two{
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.three{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.four{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+@keyframes suncolor{
+  0%{
+    background: #fff;
+    top: 0;
+    left: 0;
+  }
+  50%{
+    background: #fdea78;
+    top: -40px;
+    left: 90px;
+  }
+  100%{
+    background: #fff;
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes lines{
+  0%{
+    background: #fff;
+    width: 50px;
+  }
+  50%{
+    background: #fdea78;
+    width: 90px;
+  }
+  100%{
+    background: #fff;
+    width: 50px;
+  }
+}
+
+
+/* Night */
+
+.night{
+  background-color: white;
+
+}
+.nightClass{
+  animation: .5s linear nightcolor infinite;
+}
+svg{
+  height: 70px;
+  width: 100px;
+  position: relative;
+  left: -35px;
+  top: -5px;
+  opacity: 0;
+}
+svg.svgClass{
+  animation: .5s linear svganimation infinite;
+}
+
+@keyframes nightcolor{
+  0%{
+    top: 0;
+    left: 0;
+  }
+  50%{
+    top: -40px;
+    left: -90px;
+  }
+  100%{
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes svganimation{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
